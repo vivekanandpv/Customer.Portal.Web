@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Customer.Portal.Web.Configurations;
 using Customer.Portal.Web.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -36,6 +37,10 @@ namespace Customer.Portal.Web {
                         .AllowAnyMethod()
                         .AllowAnyHeader();
                 });
+            });
+
+            services.AddAutoMapper(config => {
+                config.AddProfile<CustomerPortalAutoMapperProfile>();
             });
         }
 
