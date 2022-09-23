@@ -4,14 +4,16 @@ using Customer.Portal.Web.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Customer.Portal.Web.Migrations
 {
     [DbContext(typeof(CustomerPortalContext))]
-    partial class CustomerPortalContextModelSnapshot : ModelSnapshot
+    [Migration("20220923112240_RenameAccounts")]
+    partial class RenameAccounts
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

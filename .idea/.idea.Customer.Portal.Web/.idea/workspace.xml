@@ -5,13 +5,15 @@
     <projectFile profileName="IIS Express">Customer.Portal.Web.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="678d8fa1-78f5-49af-86fb-f551fedb7563" name="Changes" comment="adds viewmodels">
-      <change afterPath="$PROJECT_DIR$/Configurations/CustomerPortalAutoMapperProfile.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/IAccountService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/IBankCustomerService.cs" afterDir="false" />
+    <list default="true" id="678d8fa1-78f5-49af-86fb-f551fedb7563" name="Changes" comment="adds automapper">
+      <change afterPath="$PROJECT_DIR$/Exceptions/DomainInvariantException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exceptions/RecordNotFoundException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Migrations/20220923112240_RenameAccounts.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Migrations/20220923112240_RenameAccounts.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/BankCustomerService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Customer.Portal.Web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Customer.Portal.Web/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer.Portal.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Customer.Portal.Web.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Context/CustomerPortalContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Context/CustomerPortalContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/CustomerPortalContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Migrations/CustomerPortalContextModelSnapshot.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663910623500</updated>
-      <workItem from="1663910633281" duration="13575000" />
+      <workItem from="1663910633281" duration="17333000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1663911203035</created>
@@ -95,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663926398461</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="adds automapper">
+      <created>1663929098352</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663929098352</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +130,7 @@
     <MESSAGE value="Adds entities" />
     <MESSAGE value="adds migrations and cors" />
     <MESSAGE value="adds viewmodels" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds viewmodels" />
+    <MESSAGE value="adds automapper" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds automapper" />
   </component>
 </project>
