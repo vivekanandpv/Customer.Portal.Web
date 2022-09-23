@@ -5,17 +5,16 @@
     <projectFile profileName="IIS Express">Customer.Portal.Web.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="678d8fa1-78f5-49af-86fb-f551fedb7563" name="Changes" comment="Adds entities">
-      <change afterPath="$PROJECT_DIR$/Context/CustomerPortalContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Migrations/20220923084911_InitialDesign.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Migrations/20220923084911_InitialDesign.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Migrations/CustomerPortalContextModelSnapshot.cs" afterDir="false" />
+    <list default="true" id="678d8fa1-78f5-49af-86fb-f551fedb7563" name="Changes" comment="adds migrations and cors">
+      <change afterPath="$PROJECT_DIR$/ViewModels/AccountCreateViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewModels/AccountUpdateViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewModels/AccountViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewModels/BankCustomerCreateViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewModels/BankCustomerUpdateViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewModels/BankCustomerViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewModels/LoginViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewModels/UserCreateViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Customer.Portal.Web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Customer.Portal.Web/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer.Portal.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Customer.Portal.Web.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Account.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Account.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Customer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/BankCustomer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663910623500</updated>
-      <workItem from="1663910633281" duration="10483000" />
+      <workItem from="1663910633281" duration="11551000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1663911203035</created>
@@ -85,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663916238431</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="adds migrations and cors">
+      <created>1663925289943</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663925289943</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +115,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Adds entities" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adds entities" />
+    <MESSAGE value="adds migrations and cors" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds migrations and cors" />
   </component>
 </project>
