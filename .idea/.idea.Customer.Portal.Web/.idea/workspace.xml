@@ -5,19 +5,17 @@
     <projectFile profileName="IIS Express">Customer.Portal.Web.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="678d8fa1-78f5-49af-86fb-f551fedb7563" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/Controllers/CustomersController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Account.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/AccountStatus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/AccountType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Customer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Gender.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/MaritalStatus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Role.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/SourceOfIncome.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/User.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/UserRole.cs" afterDir="false" />
+    <list default="true" id="678d8fa1-78f5-49af-86fb-f551fedb7563" name="Changes" comment="Adds entities">
+      <change afterPath="$PROJECT_DIR$/Context/CustomerPortalContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Migrations/20220923084911_InitialDesign.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Migrations/20220923084911_InitialDesign.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Migrations/CustomerPortalContextModelSnapshot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Customer.Portal.Web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Customer.Portal.Web/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer.Portal.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Customer.Portal.Web.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Account.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Account.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Customer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/BankCustomer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +39,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "editor.preferences.smartKeys_rider",
     "vue.rearranger.settings.migration": "true"
   }
@@ -70,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663910623500</updated>
-      <workItem from="1663910633281" duration="5441000" />
+      <workItem from="1663910633281" duration="10483000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1663911203035</created>
@@ -79,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663911203035</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adds entities">
+      <created>1663916238431</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663916238431</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,6 +108,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Adds entities" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds entities" />
   </component>
 </project>

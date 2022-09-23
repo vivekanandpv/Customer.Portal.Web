@@ -14,7 +14,7 @@ namespace Customer.Portal.Web.Models {
         public bool? CardActive { get; set; }
         public string Currency { get; set; }
 
-        public Customer Customer { get; set; }
+        public BankCustomer Customer { get; set; }
         public int CustomerId { get; set; }
     }
 }

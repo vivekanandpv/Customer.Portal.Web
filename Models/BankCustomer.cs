@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 
 namespace Customer.Portal.Web.Models {
-    public class Customer {
+    public class BankCustomer {
         public int Id { get; set; }
         public int FolioNumber { get; set; }
         public string FirstName { get; set; }
