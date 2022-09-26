@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Customer.Portal.Web.Configurations;
 using Customer.Portal.Web.Context;
+using Customer.Portal.Web.Filters;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -25,7 +26,10 @@ namespace Customer.Portal.Web {
         public void ConfigureServices(IServiceCollection services) {
             var allowedOrigins = _configuration.GetSection("AllowedOrigins").Get<string[]>();
             
-            services.AddControllers();
+            services.AddControllers(options => {
+                options.Filters.Add(new GeneralExceptionHandler());
+            });
+            
             services.AddDbContext<CustomerPortalContext>(options => {
                 options.UseSqlServer(_configuration.GetConnectionString("SqlServer"));
             });

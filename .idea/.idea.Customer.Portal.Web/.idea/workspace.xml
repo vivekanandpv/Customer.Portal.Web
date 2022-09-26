@@ -5,9 +5,10 @@
     <projectFile profileName="IIS Express">Customer.Portal.Web.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="678d8fa1-78f5-49af-86fb-f551fedb7563" name="Changes" comment="Implements AccountService.cs">
+    <list default="true" id="678d8fa1-78f5-49af-86fb-f551fedb7563" name="Changes" comment="implements CustomersController.cs">
+      <change afterPath="$PROJECT_DIR$/Filters/GeneralExceptionHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Customer.Portal.Web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Customer.Portal.Web/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/CustomersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/CustomersController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +19,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/325e6e15a1d921b1e255433f6d3d49293cb6bc2cb55cfe789f7894f9a2697/DbContextOptions`.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/686934cf8a6aee5b7163f9b717bd582ed59342bd67c1b9bc01a719416669/DbContextOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/834c2547c89e773bf77ff3c928aa1e05e7c7225dff93368fddb6eff2672d16/IDbContextOptions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/vivekanandpv/RiderProjects/Customer.Portal.Web/Controllers/CustomersController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/vivekanandpv/RiderProjects/Customer.Portal.Web/Services/AccountService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/vivekanandpv/RiderProjects/Customer.Portal.Web/Services/AccountService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/vivekanandpv/RiderProjects/Customer.Portal.Web/Services/BankCustomerService.cs" root0="SKIP_HIGHLIGHTING" />
@@ -135,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664175585147</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="implements CustomersController.cs">
+      <created>1664176990776</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1664176990776</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +175,7 @@
     <MESSAGE value="refactors BankCustomerService.cs" />
     <MESSAGE value="implements account service" />
     <MESSAGE value="Implements AccountService.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implements AccountService.cs" />
+    <MESSAGE value="implements CustomersController.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="implements CustomersController.cs" />
   </component>
 </project>
