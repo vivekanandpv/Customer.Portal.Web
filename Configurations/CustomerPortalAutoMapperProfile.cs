@@ -10,10 +10,10 @@ namespace Customer.Portal.Web.Configurations {
             CreateMap<BankCustomerUpdateViewModel, BankCustomer>();
 
             CreateMap<Account, AccountViewModel>();
-            CreateMap<AccountCreateViewModel, Account>();
-            CreateMap<AccountUpdateViewModel, Account>().ForMember(a => a.CustomerId, options => {
+            CreateMap<AccountCreateViewModel, Account>().ForMember(a => a.CustomerId, options => {
                 options.Ignore();
             });
+            CreateMap<AccountUpdateViewModel, Account>();
         }
     }
 }
