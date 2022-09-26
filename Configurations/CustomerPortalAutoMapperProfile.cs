@@ -11,7 +11,9 @@ namespace Customer.Portal.Web.Configurations {
 
             CreateMap<Account, AccountViewModel>();
             CreateMap<AccountCreateViewModel, Account>();
-            CreateMap<AccountUpdateViewModel, Account>();
+            CreateMap<AccountUpdateViewModel, Account>().ForMember(a => a.CustomerId, options => {
+                options.Ignore();
+            });
         }
     }
 }
