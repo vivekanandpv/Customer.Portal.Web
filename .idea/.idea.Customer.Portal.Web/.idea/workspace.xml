@@ -5,10 +5,9 @@
     <projectFile profileName="IIS Express">Customer.Portal.Web.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="678d8fa1-78f5-49af-86fb-f551fedb7563" name="Changes" comment="implements CustomersController.cs">
-      <change afterPath="$PROJECT_DIR$/Filters/GeneralExceptionHandler.cs" afterDir="false" />
+    <list default="true" id="678d8fa1-78f5-49af-86fb-f551fedb7563" name="Changes" comment="Adds exception handler filter">
+      <change afterPath="$PROJECT_DIR$/Controllers/AccountsController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Customer.Portal.Web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Customer.Portal.Web/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664176990776</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Adds exception handler filter">
+      <created>1664182595049</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1664182595050</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +182,7 @@
     <MESSAGE value="implements account service" />
     <MESSAGE value="Implements AccountService.cs" />
     <MESSAGE value="implements CustomersController.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="implements CustomersController.cs" />
+    <MESSAGE value="Adds exception handler filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds exception handler filter" />
   </component>
 </project>
