@@ -15,28 +15,17 @@ namespace Customer.Portal.Web.Services {
         private readonly IMapper _mapper;
         private readonly ILogger<BankCustomerService> _logger;
 
-        public BankCustomerService(CustomerPortalContext context, IMapper mapper, ILogger<BankCustomerService> logger) {
+        public BankCustomerService(CustomerPortalContext context, IMapper mapper, ILoggerFactory loggerFactory) {
             _context = context;
             _mapper = mapper;
-            _logger = logger;
+            _logger = loggerFactory.CreateLogger<BankCustomerService>();
         }
 
         public async Task<IEnumerable<BankCustomerViewModel>> GetAllAsync() {
-            var customers = await _context
+            return await _context
                 .Customers
-                .Include(c => c.Accounts)
+                .Select(c => _mapper.Map<BankCustomer, BankCustomerViewModel>(c))
                 .ToListAsync();
-
-            return customers
-                .Select(c => {
-                    var viewModel = _mapper.Map<BankCustomer, BankCustomerViewModel>(c);
-
-                    var accounts = c.Accounts.Select(a => _mapper.Map<Account, AccountViewModel>(a)).ToList();
-
-                    viewModel.Accounts = accounts;
-
-                    return viewModel;
-                });
         }
 
         public async Task<BankCustomerViewModel> GetByIdAsync(int id) {
@@ -67,7 +56,7 @@ namespace Customer.Portal.Web.Services {
                 throw new DomainInvariantException($"Discrepancy in the customer {id} and {customer.Id}");
             }
             
-            var customerDb = await GetCustomer(id);
+            var customerDb = await GetCustomer(id, false);
             _mapper.Map<BankCustomerUpdateViewModel, BankCustomer>(customer, customerDb);
 
             await _context.SaveChangesAsync();
@@ -76,18 +65,21 @@ namespace Customer.Portal.Web.Services {
         }
 
         public async Task DeleteAsync(int id) {
-            var customerDb = await GetCustomer(id);
+            var customerDb = await GetCustomer(id, false);
 
             _context.Customers.Remove(customerDb);
 
             await _context.SaveChangesAsync();
         }
 
-        private async Task<BankCustomer> GetCustomer(int id) {
-            var customerDb = await _context
-                .Customers
-                .Include(c => c.Accounts)
-                .FirstOrDefaultAsync(c => c.Id == id);
+        private async Task<BankCustomer> GetCustomer(int id, bool withAccounts = true) {
+            IQueryable<BankCustomer> query = _context.Customers;
+
+            if (withAccounts) {
+                query = query.Include(c => c.Accounts);
+            }
+            
+            var customerDb = await query.FirstOrDefaultAsync(c => c.Id == id);
 
             if (customerDb == null) {
                 throw new RecordNotFoundException($"Could not find the customer with id: {id}");

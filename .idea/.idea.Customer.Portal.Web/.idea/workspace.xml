@@ -5,20 +5,19 @@
     <projectFile profileName="IIS Express">Customer.Portal.Web.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="678d8fa1-78f5-49af-86fb-f551fedb7563" name="Changes" comment="adds automapper">
-      <change afterPath="$PROJECT_DIR$/Exceptions/DomainInvariantException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exceptions/RecordNotFoundException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Migrations/20220923112240_RenameAccounts.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Migrations/20220923112240_RenameAccounts.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/BankCustomerService.cs" afterDir="false" />
+    <list default="true" id="678d8fa1-78f5-49af-86fb-f551fedb7563" name="Changes" comment="adds core logic to BankCustomerService.cs">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Customer.Portal.Web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Customer.Portal.Web/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Context/CustomerPortalContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Context/CustomerPortalContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Migrations/CustomerPortalContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Migrations/CustomerPortalContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/BankCustomerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/BankCustomerService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/325e6e15a1d921b1e255433f6d3d49293cb6bc2cb55cfe789f7894f9a2697/DbContextOptions`.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/686934cf8a6aee5b7163f9b717bd582ed59342bd67c1b9bc01a719416669/DbContextOptions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/834c2547c89e773bf77ff3c928aa1e05e7c7225dff93368fddb6eff2672d16/IDbContextOptions.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -31,17 +30,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.smartKeys_rider",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.smartKeys_rider&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Customer.Portal.Web" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Customer.Portal.Web.csproj" />
@@ -67,7 +66,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663910623500</updated>
-      <workItem from="1663910633281" duration="17333000" />
+      <workItem from="1663910633281" duration="18839000" />
+      <workItem from="1664105079980" duration="5156000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1663911203035</created>
@@ -104,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663929098352</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="adds core logic to BankCustomerService.cs">
+      <created>1663932991521</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663932991521</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +138,7 @@
     <MESSAGE value="adds migrations and cors" />
     <MESSAGE value="adds viewmodels" />
     <MESSAGE value="adds automapper" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds automapper" />
+    <MESSAGE value="adds core logic to BankCustomerService.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds core logic to BankCustomerService.cs" />
   </component>
 </project>
