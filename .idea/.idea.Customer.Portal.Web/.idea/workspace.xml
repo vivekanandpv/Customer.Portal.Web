@@ -5,9 +5,9 @@
     <projectFile profileName="IIS Express">Customer.Portal.Web.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="678d8fa1-78f5-49af-86fb-f551fedb7563" name="Changes" comment="refactors BankCustomerService.cs">
-      <change beforePath="$PROJECT_DIR$/Configurations/CustomerPortalAutoMapperProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Configurations/CustomerPortalAutoMapperProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/AccountService.cs" beforeDir="false" />
+    <list default="true" id="678d8fa1-78f5-49af-86fb-f551fedb7563" name="Changes" comment="Implements AccountService.cs">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Customer.Portal.Web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Customer.Portal.Web/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/CustomersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/CustomersController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +18,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/325e6e15a1d921b1e255433f6d3d49293cb6bc2cb55cfe789f7894f9a2697/DbContextOptions`.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/686934cf8a6aee5b7163f9b717bd582ed59342bd67c1b9bc01a719416669/DbContextOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/834c2547c89e773bf77ff3c928aa1e05e7c7225dff93368fddb6eff2672d16/IDbContextOptions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/vivekanandpv/RiderProjects/Customer.Portal.Web/Services/AccountService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/vivekanandpv/RiderProjects/Customer.Portal.Web/Services/AccountService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/vivekanandpv/RiderProjects/Customer.Portal.Web/Services/BankCustomerService.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -32,17 +33,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.smartKeys_rider&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.completion",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Customer.Portal.Web" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Customer.Portal.Web.csproj" />
@@ -120,7 +121,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664166585091</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="implements account service">
+      <created>1664175566216</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1664175566216</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Implements AccountService.cs">
+      <created>1664175585147</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1664175585147</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +164,8 @@
     <MESSAGE value="adds automapper" />
     <MESSAGE value="adds core logic to BankCustomerService.cs" />
     <MESSAGE value="refactors BankCustomerService.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactors BankCustomerService.cs" />
+    <MESSAGE value="implements account service" />
+    <MESSAGE value="Implements AccountService.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implements AccountService.cs" />
   </component>
 </project>
