@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Customer.Portal.Web.Controllers {
     [Route("api/v1/[controller]")]
+    [ApiController]
     public class CustomersController : ControllerBase {
         private readonly IBankCustomerService _service;
         private readonly ILogger<CustomersController> _logger;

@@ -28,11 +28,6 @@ namespace Customer.Portal.Web.Context {
 
             modelBuilder.Entity<UserRole>()
                 .HasKey(ur => new { ur.UserId, ur.RoleId });
-
-            modelBuilder.Entity<Account>()
-                .HasOne<BankCustomer>()
-                .WithMany(c => c.Accounts)
-                .HasForeignKey(a => a.CustomerId);
         }
     }
 }

@@ -7,6 +7,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Customer.Portal.Web.Controllers {
     [Route("api/v1/[controller]")]
+    [ApiController]
     public class AccountsController : ControllerBase {
         private readonly IAccountService _service;
         private readonly ILogger<AccountsController> _logger;

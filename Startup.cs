@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Customer.Portal.Web.Configurations;
 using Customer.Portal.Web.Context;
 using Customer.Portal.Web.Filters;
+using Customer.Portal.Web.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -12,6 +13,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace Customer.Portal.Web {
     public class Startup {
@@ -25,14 +29,15 @@ namespace Customer.Portal.Web {
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services) {
             var allowedOrigins = _configuration.GetSection("AllowedOrigins").Get<string[]>();
-            
-            services.AddControllers(options => {
-                options.Filters.Add(new GeneralExceptionHandler());
-            });
-            
-            services.AddDbContext<CustomerPortalContext>(options => {
-                options.UseSqlServer(_configuration.GetConnectionString("SqlServer"));
-            });
+
+            services.AddControllers(options => { options.Filters.Add(new GeneralExceptionHandler()); })
+                .AddNewtonsoftJson(options => {
+                    options.SerializerSettings.DateTimeZoneHandling = DateTimeZoneHandling.Utc;
+                    options.SerializerSettings.DateFormatHandling = DateFormatHandling.IsoDateFormat;
+                    options.SerializerSettings.Converters.Add(new StringEnumConverter());
+                });
+
+            services.AddDbContext<CustomerPortalContext>(options => { options.UseSqlServer(_configuration.GetConnectionString("SqlServer")); });
 
             services.AddCors(options => {
                 options.AddPolicy("App_Cors_Policy", builder => {
@@ -43,24 +48,29 @@ namespace Customer.Portal.Web {
                 });
             });
 
-            services.AddAutoMapper(config => {
-                config.AddProfile<CustomerPortalAutoMapperProfile>();
-            });
+            services.AddAutoMapper(config => { config.AddProfile<CustomerPortalAutoMapperProfile>(); });
+
+            services.AddScoped<IBankCustomerService, BankCustomerService>();
+            services.AddScoped<IAccountService, AccountService>();
+
+            services.AddSwaggerGen(config => { config.SwaggerDoc("v1.0.0", new OpenApiInfo { Title = "Customer Portal API Documentation" }); });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env) {
             if (env.IsDevelopment()) {
                 app.UseDeveloperExceptionPage();
+                app.UseSwagger();
+                app.UseSwaggerUI(config => {
+                    config.SwaggerEndpoint("/swagger/v1.0.0/swagger.json", "Customer Portal");
+                });
             }
 
             app.UseCors("App_Cors_Policy");
 
             app.UseRouting();
 
-            app.UseEndpoints(endpoints => {
-                endpoints.MapControllers();
-            });
+            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
     }
 }

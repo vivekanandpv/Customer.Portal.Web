@@ -5,9 +5,24 @@
     <projectFile profileName="IIS Express">Customer.Portal.Web.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="678d8fa1-78f5-49af-86fb-f551fedb7563" name="Changes" comment="Adds exception handler filter">
-      <change afterPath="$PROJECT_DIR$/Controllers/AccountsController.cs" afterDir="false" />
+    <list default="true" id="678d8fa1-78f5-49af-86fb-f551fedb7563" name="Changes" comment="Implements AccountsController.cs">
+      <change afterPath="$PROJECT_DIR$/Exceptions/AuthException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exceptions/LoginFailedException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exceptions/UserRegistrationFailedException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Migrations/20220926112115_RemovedExplicitForeignKeyForAccount.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Migrations/20220926112115_RemovedExplicitForeignKeyForAccount.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/IAuthService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewModels/JwtViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Customer.Portal.Web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Customer.Portal.Web/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Configurations/CustomerPortalAutoMapperProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Configurations/CustomerPortalAutoMapperProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Context/CustomerPortalContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Context/CustomerPortalContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/AccountsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/AccountsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/CustomersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/CustomersController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer.Portal.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Customer.Portal.Web.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/CustomerPortalContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Migrations/CustomerPortalContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViewModels/UserCreateViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ViewModels/UserCreateViewModel.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +31,15 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/325e6e15a1d921b1e255433f6d3d49293cb6bc2cb55cfe789f7894f9a2697/DbContextOptions`.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/33bf6c97972861100c9cfd794babe6336a7dc705f882d5b6cb05159661a20/HashAlgorithm.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3f9ca5f2c417c253485bced6a15525a8aa994f994946ea47891f95298ee/HMAC.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/686934cf8a6aee5b7163f9b717bd582ed59342bd67c1b9bc01a719416669/DbContextOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/834c2547c89e773bf77ff3c928aa1e05e7c7225dff93368fddb6eff2672d16/IDbContextOptions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9d41a1693aebd4fcb2f270da1376b53ff2f1f8dbe8b15387d214d310fced98a/MapperConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9ded3c76ae1d52ef622ba1b7a6a784f73be3d45369649322799b395bd40a7/KeyedHashAlgorithm.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ac1f7186c64e462e5f4063a08c05620d6b4e33f97df96bc6041bd593d1f8ed/HMACSHA512.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d5e3b2b57eb62226266135a5efb8e140b25e2779475938e82d6bb9ac9557f9d/DynamicILGenerator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ecc3313c364786d6a992fb2a666732cf6d597647d75e2bfd256c7dd46cdf3/LockingConcurrentDictionary.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/vivekanandpv/RiderProjects/Customer.Portal.Web/Controllers/CustomersController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/vivekanandpv/RiderProjects/Customer.Portal.Web/Services/AccountService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/vivekanandpv/RiderProjects/Customer.Portal.Web/Services/AccountService.cs" root0="SKIP_HIGHLIGHTING" />
@@ -150,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664182595050</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Implements AccountsController.cs">
+      <created>1664183721421</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1664183721421</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +212,7 @@
     <MESSAGE value="Implements AccountService.cs" />
     <MESSAGE value="implements CustomersController.cs" />
     <MESSAGE value="Adds exception handler filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adds exception handler filter" />
+    <MESSAGE value="Implements AccountsController.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implements AccountsController.cs" />
   </component>
 </project>
