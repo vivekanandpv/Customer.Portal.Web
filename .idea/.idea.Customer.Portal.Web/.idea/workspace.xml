@@ -5,14 +5,9 @@
     <projectFile profileName="IIS Express">Customer.Portal.Web.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="678d8fa1-78f5-49af-86fb-f551fedb7563" name="Changes" comment="implements register user">
-      <change afterPath="$PROJECT_DIR$/Configurations/AppSettings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/AuthService.cs" afterDir="false" />
+    <list default="true" id="678d8fa1-78f5-49af-86fb-f551fedb7563" name="Changes" comment="implements login">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Customer.Portal.Web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Customer.Portal.Web/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer.Portal.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Customer.Portal.Web.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/IAuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/IAuthService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664257035343</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="implements login">
+      <created>1664258999781</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1664258999781</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +213,7 @@
     <MESSAGE value="Adds exception handler filter" />
     <MESSAGE value="Implements AccountsController.cs" />
     <MESSAGE value="implements register user" />
-    <option name="LAST_COMMIT_MESSAGE" value="implements register user" />
+    <MESSAGE value="implements login" />
+    <option name="LAST_COMMIT_MESSAGE" value="implements login" />
   </component>
 </project>
