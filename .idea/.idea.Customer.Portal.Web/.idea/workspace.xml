@@ -5,24 +5,14 @@
     <projectFile profileName="IIS Express">Customer.Portal.Web.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="678d8fa1-78f5-49af-86fb-f551fedb7563" name="Changes" comment="Implements AccountsController.cs">
-      <change afterPath="$PROJECT_DIR$/Exceptions/AuthException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exceptions/LoginFailedException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exceptions/UserRegistrationFailedException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Migrations/20220926112115_RemovedExplicitForeignKeyForAccount.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Migrations/20220926112115_RemovedExplicitForeignKeyForAccount.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/IAuthService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewModels/JwtViewModel.cs" afterDir="false" />
+    <list default="true" id="678d8fa1-78f5-49af-86fb-f551fedb7563" name="Changes" comment="implements register user">
+      <change afterPath="$PROJECT_DIR$/Configurations/AppSettings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/AuthService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Customer.Portal.Web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Customer.Portal.Web/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Configurations/CustomerPortalAutoMapperProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Configurations/CustomerPortalAutoMapperProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Context/CustomerPortalContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Context/CustomerPortalContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/AccountsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/AccountsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/CustomersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/CustomersController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Customer.Portal.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Customer.Portal.Web.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Migrations/CustomerPortalContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Migrations/CustomerPortalContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/IAuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/IAuthService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ViewModels/UserCreateViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ViewModels/UserCreateViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664183721421</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="implements register user">
+      <created>1664257035343</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1664257035343</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +210,7 @@
     <MESSAGE value="implements CustomersController.cs" />
     <MESSAGE value="Adds exception handler filter" />
     <MESSAGE value="Implements AccountsController.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implements AccountsController.cs" />
+    <MESSAGE value="implements register user" />
+    <option name="LAST_COMMIT_MESSAGE" value="implements register user" />
   </component>
 </project>

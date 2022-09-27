@@ -54,6 +54,8 @@ namespace Customer.Portal.Web {
             services.AddScoped<IAccountService, AccountService>();
 
             services.AddSwaggerGen(config => { config.SwaggerDoc("v1.0.0", new OpenApiInfo { Title = "Customer Portal API Documentation" }); });
+
+            services.Configure<AppSettings>(_configuration.GetSection("AppSettings"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
