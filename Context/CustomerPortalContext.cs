@@ -13,19 +13,6 @@ namespace Customer.Portal.Web.Context {
         public DbSet<UserRole> UserRoles { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder) {
-            base.OnModelCreating(modelBuilder);
-
-            modelBuilder.Entity<UserRole>()
-                .HasOne<User>()
-                .WithMany(u => u.UserRoles)
-                .HasForeignKey(ur => ur.UserId);
-
-            modelBuilder.Entity<UserRole>()
-                .HasOne<Role>()
-                .WithMany(r => r.UserRoles)
-                .HasForeignKey(ur => ur.RoleId);
-            
-
             modelBuilder.Entity<UserRole>()
                 .HasKey(ur => new { ur.UserId, ur.RoleId });
         }

@@ -55,6 +55,7 @@ namespace Customer.Portal.Web {
 
             services.AddScoped<IBankCustomerService, BankCustomerService>();
             services.AddScoped<IAccountService, AccountService>();
+            services.AddScoped<IAuthService, AuthService>();
 
             services.AddSwaggerGen(config => { config.SwaggerDoc("v1.0.0", new OpenApiInfo { Title = "Customer Portal API Documentation" }); });
 

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 using Customer.Portal.Web.Models;
 
 namespace Customer.Portal.Web.ViewModels {
@@ -31,6 +32,7 @@ namespace Customer.Portal.Web.ViewModels {
         public string? NomineeLastName { get; set; }
         public string NomineeRelationship { get; set; }
 
+        
         public IList<AccountViewModel> Accounts { get; set; } = new List<AccountViewModel>();
     }
 }

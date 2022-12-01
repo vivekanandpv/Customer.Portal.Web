@@ -30,7 +30,7 @@ namespace Customer.Portal.Web.Services {
 
             var viewModel = _mapper.Map<AccountViewModel>(accountDb);
             var customerViewModel = _mapper.Map<BankCustomer, BankCustomerViewModel>(accountDb.Customer);
-            viewModel.Customer = customerViewModel;
+            // viewModel.Customer = customerViewModel;
 
             return viewModel;
         }

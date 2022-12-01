@@ -1,4 +1,5 @@
 using System;
+using System.Text.Json.Serialization;
 using Customer.Portal.Web.Models;
 
 namespace Customer.Portal.Web.ViewModels {
@@ -15,7 +16,8 @@ namespace Customer.Portal.Web.ViewModels {
         public bool? CardActive { get; set; }
         public string Currency { get; set; }
 
-        public BankCustomerViewModel Customer { get; set; }
+        
+        
         public int CustomerId { get; set; }
     }
 }
